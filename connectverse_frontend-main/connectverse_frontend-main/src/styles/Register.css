@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "outfit";
+}
+.containers {
+    width: 100%;
+    background-image: url('../assets/gradient.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height: 100vh;
+    padding: 1.2rem 5vw;
+    display: flex;
+    gap: 2rem;
+}
+
+.container-quote {
+    width: 50vw;
+    border-radius: 1.25rem;
+    border: 1px solid rgb(255,255,255,.6);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 1rem
+}
+
+.container-quote h1 {
+color: white;
+font-family: "outfit"
+}
+.container-quote p {
+color: rgb(255,255,255,.8);
+padding: 1rem 0;
+font-family: "outfit"
+}
+.container-register{
+    background-color: #FFFFFF;
+    width: 50vw;
+    border-radius: 1.25rem;
+    border: 1px solid rgb(255,255,255,.6);
+    padding: .25rem 4rem;
+}
+.container-register h1 {
+    color: #0E1227;
+    text-align: center;
+    padding: .5rem 0;
+    font-family: "outfit";
+}
+.container-register form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    gap:.5rem
+}
+.container-register .inputs{
+display: flex;
+flex-direction: column;
+gap:1.2rem;
+}
+.inputs label {
+    font-size: 18px;
+    color: #12172A;
+    font-family: "outfit"
+}
+.inputs  input{
+    border-radius: .25rem;
+    padding: .5rem .25rem;
+    border: none;
+    outline: none;
+    color: #000;
+    /* width:100px; */
+    background-color: rgb(212,216,232,.6)
+}
+.inputs input::placeholder {
+    font-family: "outfit";
+    color: #000;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    padding: 1rem 0;
+}.btns button {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+border: none;
+background-color: #000000;
+color: white;
+border-radius: .5rem;
+    padding: .75rem 0;
+}
+.btns button:hover, .button:hover {
+    cursor: pointer;
+    transition: all .2s ease;
+    background-color: #033AFF;
+}
+.container-register p {
+    text-align: center;
+    font-family: "outfit";
+    padding: 1.2rem 0;
+    color: black;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    border-radius: .2rem;
+    padding: .85rem .25rem;
+    text-align: center;
+    color: white;
+    list-style:none;
+    text-decoration: none
+}
+
+.reg {
+background: none;
+    color: #033AFF;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 1.2rem 6vw;
+        min-height: 100vh;
+    }
+    .container-quote {
+        display: none
+    }
+    .container-register{
+    background-color: #FFFFFF;
+    width: 100vw;
+    border-radius: 1.25rem;
+    border: 1px solid rgb(255,255,255,.6);
+    padding: .25rem 4rem;
+}
+}
+@media only screen and (max-width: 468px) {
+    .container {
+        padding: 1.2rem 3vw;
+        min-height: 100vh;
+    }
+    .container-quote {
+        display: none
+    }
+    .container-register{
+     min-height: 100%;
+    background-color: #FFFFFF;
+    width: 100vw;
+    border-radius: 1.25rem;
+    border: 1px solid rgb(255,255,255,.6);
+    padding: .25rem 2.5rem;
+}
+}

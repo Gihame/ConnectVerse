@@ -1,0 +1,43 @@
+.forgot {
+    background: none;
+    border: none;
+    padding: .5rem 0;
+    text-align: right
+}
+.pass:hover{
+    color: #033AFF;
+}
+form {
+    margin: 5vh 0;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    border-radius: .2rem;
+    padding: .85rem .25rem;
+    text-align: center;
+    color: white;
+    list-style:none;
+    text-decoration: none
+}
+.pass {
+   background: none;
+    border: none;
+    /* padding: .85rem .25rem;  */
+    color: black;
+    text-align: right;
+}
+.reg {
+background: none;
+    color: #033AFF;
+}
+.button:hover {
+    transition: all .2s ease;
+    background-color: #033AFF;
+}
+.btns button:hover {
+    cursor: pointer;
+    transition: all .2s ease;
+    background-color: #033AFF;
+}

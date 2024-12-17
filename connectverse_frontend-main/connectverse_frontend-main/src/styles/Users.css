@@ -1,0 +1,103 @@
+.Container {
+  background-color: #0e1227;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.users-main {
+  background-color: #141b34;
+  margin: 1rem;
+  padding: 1rem;
+  width: 80vw;
+  overflow: hidden;
+}
+.user p {
+  text-align: start;
+}
+.scrollable {
+  overflow: scroll;
+  height: 100%;
+}
+.user-header {
+  display: flex;
+  gap: 62.5vw;
+  align-items: start;
+  jsutify-content: space-between;
+  /* width: 100vw; */
+}
+.user-header button {
+  border: none;
+  background: none;
+  color: white;
+  display: none;
+}
+.users-main .user-header {
+  text-align: start;
+  color: white;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.25);
+  padding-bottom: 0.25rem;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  color: #fff;
+}
+.user:hover {
+  background: rgb(217, 217, 217, 0.05);
+}
+.user button {
+  color: #ff1e2c;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
+.user button:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .scrollable {
+    overflow: scroll;
+    min-height: 100vh;
+  }
+  .container {
+    height: 100%;
+  }
+  .users-main {
+    width: 100vw;
+    height: 100%;
+    padding: 0 4vw;
+  }
+  .user-header {
+    display: flex;
+    /* gap: 45vw; */
+    jsutify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.25rem;
+    /* width: 100vw; */
+  }
+  .user-header h1 {
+    font-size: 2.5vw;
+  }
+  .user-header button {
+    display: flex;
+  }
+  .user p {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .scrollable {
+    overflow: scroll;
+    min-height: 100vh;
+  }
+  .user p:nth-child(2) {
+    display: none;
+  }
+  .user p {
+    font-size: 3vw;
+  }
+  .user-header h1 {
+    font-size: 3.5vw;
+  }
+}
